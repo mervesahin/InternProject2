@@ -1,0 +1,15 @@
+<h4>Main Page</h4>
+<br>
+    Name
+    Surname
+    Delete
+    Update
+  
+
+     <ul ng-repeat="person in people">
+        <li>{{$index}} - {{person.name}} {{person.surname}}  <input type="button" ng-click="persondelete($index)" value="Delete">    
+         <input type="button" ng-click="tempUpdateMetod($index)" value="Update"> </li>
+    </ul>
+    <a href='#/insert'>Go to insert page</a>
+
+<br>
